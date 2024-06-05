@@ -1,0 +1,64 @@
+@import "../../responsive.scss";
+.homepage{
+  display: flex;
+  height: 100%;
+  .textContainer{
+    flex: 3;
+    .wrapper{
+      padding: 4.1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+      @include md{
+        padding: 0;
+      }
+      @include sm{
+        justify-content: flex-start;
+      }
+      .title{
+        font-size: 2.5rem;
+        @include lg{
+          font-size: 2rem;
+        }
+      }
+      
+      .boxes{
+        display: flex;
+        justify-content: space-around;
+        gap: 0.28rem;
+        @include sm{
+          display: none;
+        }
+        h1{
+          @include lg{
+            font-size: 1.5rem;
+          }
+        }
+        h3{
+          @include lg{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .imgContainer{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    background-color: #fcf5f3;
+    position: relative;
+    @include md{
+      display: none;
+    }
+    img{
+      width: 115%;
+      position: absolute;
+      right: 0;
+      @include lg{
+        width: 105%;
+      }
+    }
+  }
+}
