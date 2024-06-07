@@ -1,10 +1,13 @@
 .singlePage{
   display: flex;
   height: 100%;
-  margin: 0 1rem;
+  margin-bottom: 1rem;
+  // margin: 0 1rem;
   .details{
     flex: 3;
     .wrapper{
+      margin-left: 1rem;
+
       padding-right: 3.2rem;
       .info{
         margin-top: 3rem;
