@@ -3,7 +3,7 @@ import "./navbar.scss";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-
+  //check comment
   const user = true;
   const handleClick = () => {
     console.log("clicked");
